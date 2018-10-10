@@ -13,6 +13,8 @@ Ce laboratoire est constitué de 2 VMs Ubuntu
 vagrant up
 ```
 
+La clé privée ssh pour accéder aux VMs est dans le dossier "keys"
+
 
 ### Prerequis
 
