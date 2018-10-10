@@ -27,16 +27,6 @@ Vagrant.configure("2") do |config|
 			v.name = "dockernode2"
 		end
 	end
-	config.vm.define "dockermaster" do |dockermaster|
-		dockermaster.vm.box = "ubuntu/xenial64"
-		dockermaster.vm.hostname = "dockermaster"
-		dockermaster.vm.network "private_network", ip: "10.10.20.5"
-		dockermaster.vm.provider "virtualbox" do |v|
-			v.memory = 3024
-			v.cpus = 2
-			v.name = "dockermaster"
-		end
-	end
 end
 
 

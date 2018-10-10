@@ -2,7 +2,7 @@
 
 Ce repo github contient les codes Vagrant necessaires au setup du laboratoire docker.
 
-Ce laboratoire st constitué de 3 VMs Ubuntu
+Ce laboratoire est constitué de 2 VMs Ubuntu
 
 ## Utilisation
 
