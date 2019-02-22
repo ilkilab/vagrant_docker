@@ -8,7 +8,7 @@
 Vagrant.configure("2") do |config|
 	config.vm.provision :shell, path: "scripts/common.sh"
 	config.vm.define "dockernode1" do |dockernode1|
-		dockernode1.vm.box = "ubuntu/xenial64"
+		dockernode1.vm.box = "ubuntu/bionic64"
 		dockernode1.vm.hostname= "dockernode1"
 		dockernode1.vm.network "private_network", ip: "10.10.20.3"
 		dockernode1.vm.provider "virtualbox" do |v|
@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
 		end
 	end
     config.vm.define "dockernode2" do |dockernode2|
-		dockernode2.vm.box = "ubuntu/xenial64"
+		dockernode2.vm.box = "ubuntu/bionic64"
 		dockernode2.vm.hostname = "dockernode2"
 		dockernode2.vm.network "private_network", ip: "10.10.20.4"
 		dockernode2.vm.provider "virtualbox" do |v|
